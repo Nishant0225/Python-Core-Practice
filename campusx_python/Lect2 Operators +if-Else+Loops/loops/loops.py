@@ -3,9 +3,16 @@
 # 2. For Loop
 
 # ==========================
-# While Loop Questions
+# While Loop with Else
 # ==========================
 
-# Q1: Write a program to print the multiplication table of a number entered by the user using a while loop.
+# The else block executes when the while loop condition becomes False
+# and the loop finishes normally (without a break statement).
 
-a=int(input("Enter a number"))
+x = 1
+
+while x < 3:
+    print(x)
+    x += 1
+else:
+    print("limit crossed")
