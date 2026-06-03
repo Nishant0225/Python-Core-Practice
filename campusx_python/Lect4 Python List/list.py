@@ -79,6 +79,11 @@ R=[1,2,3,4,5,6,7]
 R.insert(1,100)
 print(R)
 
+# Editing the items in list 
+O=[1,2,3,4,5,6,7]
+O[0:3]=[100,200,300,400,500]
+print(O)
+
 
 
 
