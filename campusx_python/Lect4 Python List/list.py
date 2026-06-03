@@ -67,6 +67,20 @@ sample = [
 ]
 print(sample)
 
+# Adding Item in list
+ 
+# Append
+S=[1,2,3,4,5,6,7]
+S.append(6)
+print(S)
+
+# Insert 
+R=[1,2,3,4,5,6,7]
+R.insert(1,100)
+print(R)
+
+
+
 
 # ==============================
 # Summary
