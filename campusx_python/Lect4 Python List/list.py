@@ -1,25 +1,81 @@
+# ==============================
 # Characteristics of a List
+# ==============================
 
 # 1. Ordered
-#    Elements maintain their insertion order.
+# Elements are stored in a specific order and maintain that order.
+
+fruits = ["apple", "banana", "mango"]
+print(fruits[0])  # Output: apple
+
 
 # 2. Mutable (Changeable)
-#    Elements can be added, removed, or modified after creation.
+# List elements can be modified after creation.
+
+fruits[1] = "orange"
+print(fruits)  # Output: ['apple', 'orange', 'mango']
+
 
 # 3. Heterogeneous
-#    Can store different data types in the same list.
+# A list can store different data types together.
+
+data = [10, "Python", 3.14, True]
+print(data)
+
 
 # 4. Allows Duplicates
-#    Multiple elements can have the same value.
+# Duplicate values are permitted in a list.
+
+numbers = [1, 2, 2, 3, 3, 3]
+print(numbers)
+
 
 # 5. Dynamic
-#    Size can grow or shrink during program execution.
+# Elements can be added or removed at runtime.
+
+numbers.append(4)
+print(numbers)
+
+numbers.remove(2)
+print(numbers)
+
 
 # 6. Supports Nesting
-#    A list can contain other lists as elements.
+# A list can contain other lists.
+
+nested_list = [[1, 2], [3, 4], [5, 6]]
+print(nested_list[1])      # Output: [3, 4]
+print(nested_list[1][0])   # Output: 3
+
 
 # 7. Accessible by Index
-#    Elements can be accessed using their index position.
+# Elements can be accessed using their position.
+
+colors = ["red", "green", "blue"]
+print(colors[2])  # Output: blue
+
 
 # 8. Can Store Any Python Object
-#    Numbers, strings, lists, dictionaries, functions, etc.
+# Lists can store strings, numbers, dictionaries, tuples, functions, etc.
+
+sample = [
+    10,
+    "Hello",
+    (1, 2),
+    {"name": "Nishant"},
+    [5, 6, 7]
+]
+print(sample)
+
+
+# ==============================
+# Summary
+# ==============================
+# ✓ Ordered
+# ✓ Mutable
+# ✓ Heterogeneous
+# ✓ Allows Duplicates
+# ✓ Dynamic
+# ✓ Supports Nesting
+# ✓ Accessible by Index
+# ✓ Can Store Any Python Object
