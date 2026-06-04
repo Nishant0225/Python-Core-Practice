@@ -84,8 +84,60 @@ O=[1,2,3,4,5,6,7]
 O[0:3]=[100,200,300,400,500]
 print(O)
 
+# Deleting items from list 
 
+# del 
+O=[1,2,3,4,5,6,7]
+del O
 
+# slicing
+
+J=[1,2,3,4,5,6,7]
+del J[0]
+print(J)
+
+H=[1,2,3,4,5,6,7]
+del H[0:3]
+print(H)
+
+# Remove
+D=[1,2,3,4,5,6,7]
+D.remove(5)
+print(D) 
+
+# Pop 
+C=[1,2,3,4,5,6,7]
+C.pop()
+print
+
+#clear
+f=[1,2,3,4,5,6,7]
+f.clear()
+
+# Operations on List
+
+# Arithmetic Operations
+a=[1,2,3,4,5,6,7]
+a=[1,2,3,4,5,6,7]
+b=[8,9,10,11,12,13]
+print(a+b)
+print(a*3)
+
+# Loops in List 
+z=[1,2,3,4,5,6,7]
+for i in z:
+    print(i)
+
+# Funtions in list
+
+# len 
+aa=[1,2,3,4,5,6,7]
+print(len(aa))
+print(min(aa))
+print(max(aa))
+print(sorted(aa))
+print(sorted(aa),reversed=True)
+aa.count(4)
 
 # ==============================
 # Summary
