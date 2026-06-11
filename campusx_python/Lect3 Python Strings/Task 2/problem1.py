@@ -11,5 +11,5 @@
 # DSMP
 
 a=input(("enter a string:"))
-a=a.split
-print(a)
+b=a.split 
+print(b)
