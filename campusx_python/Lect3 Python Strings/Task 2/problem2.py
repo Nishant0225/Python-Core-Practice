@@ -10,8 +10,3 @@
 #
 # Output:
 # camdatapusx
-
-a=input("Enter a string")
-b=input("Enter a string")
-p=a.index()/2
-print(p)

@@ -10,11 +10,6 @@
 # Output:
 # DSMP
 
-a=input("Enter a string")
-b=a.title()
-c=""
-for i in b:
-    if i>="A" and i<="Z":
-        c=c+i
-print(c)
-        
+a=input(("enter a string:"))
+a=a.split
+print(a)
