@@ -2,5 +2,5 @@
 # 1 + x^2/2 + x^3/3 + … x^n/n
 # n will be provided by the user
 
-n=int(input("Enter Range")):
+n=int(input("Enter Range"))
     

@@ -12,4 +12,3 @@
 
 a=input(("enter a string:"))
 b=a.title
-for i in b:
