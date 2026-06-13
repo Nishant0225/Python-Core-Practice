@@ -9,12 +9,27 @@
 
 # Take string input from the user
 str1 = input("Enter any string: ")
-sum=0
-count=0
-n="0123456789"
+
+# Initialize variables to store the sum of digits
+# and the count of digits
+sum = 0
+count = 0
+
+# String containing all digit characters
+n = "0123456789"
+
+# Traverse each character of the input string
 for i in str1:
+
+    # Check whether the character is a digit
     if i in n:
-        sum=sum+int(i)
-        count+=1
-print("sum:",sum,"avg=",sum/count)
+
+        # Add the digit to the sum
+        sum = sum + int(i)
+
+        # Increase the count of digits
+        count += 1
+
+# Print the sum and average of the digits
+print("Sum:", sum, "Avg:", sum / count)
     

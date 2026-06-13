@@ -6,11 +6,25 @@
 # Expected Output:
 # 2510
 
+
+# Take string input from the user
 str1 = input("Enter any string: ")
-n="0123456789"
-ns=""
+
+# String containing all digit characters
+n = "0123456789"
+
+# Empty string to store the extracted digits
+ns = ""
+
+# Traverse each character in the input string
 for i in str1:
+
+    # Check if the character is a digit
     if i in n:
-        ns=ns+i
+
+        # Append the digit to the result string
+        ns = ns + i
+
+# Print the string containing only digits
 print(ns)
     
