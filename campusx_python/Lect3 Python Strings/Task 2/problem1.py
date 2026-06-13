@@ -1,14 +1,20 @@
-# Problem 1:
-# Take a string as input from the user.
-# Create a short form using the first letter of each word.
-# Convert the short form to uppercase and print it.
-#
-# Example:
-# Input:
-# Data science mentorship program
-#
-# Output:
-# DSMP
+# Take a string input from the user
+a = input("Enter a string: ")
 
-a=input(("enter a string:"))
-b=a.title
+# Convert the first letter of each word to uppercase
+b = a.title()
+
+# Initialize an empty string to store the capital letters
+c = ""
+
+# Traverse through each character of the modified string
+for i in b:
+
+    # Check if the character is an uppercase letter (A-Z)
+    if i >= "A" and i <= "Z":
+
+        # Add the uppercase letter to the result string
+        c = c + i
+
+# Print the final string containing the first letter of each word
+print(c)
