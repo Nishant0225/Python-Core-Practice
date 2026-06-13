@@ -1,15 +1,37 @@
-# Problem 18: Find uncommon words from two Strings.
-# Statement: Given two sentences as strings A and B. The task is to return a list of all uncommon words. A word is uncommon if it appears exactly once in any one of the sentences, and does not appear in the other sentence. Note: A sentence is a string of space-separated words. Each word consists only of lowercase letters.
+# Problem 18: Find uncommon words from two strings
 
-# Example 1:
-
-# Input:
-# A = "apple banana mango" 
-# B = "banana fruits mango"
-
-# Output:
-# ['apple', 'fruits']
-
+# Take the first string as input
 str1 = input("Enter first string: ")
+
+# Take the second string as input
 str2 = input("Enter second string: ")
 
+# Split the first string into a list of words
+s3 = str1.split()
+
+# Split the second string into a list of words
+s4 = str2.split()
+
+# Empty list to store uncommon words
+r = []
+
+# Traverse words of the first string
+for i in s3:
+
+    # Check if the word is not present in the second string
+    if i not in s4:
+
+        # Add the word to the result list
+        r.append(i)
+
+# Traverse words of the second string
+for i in s4:
+
+    # Check if the word is not present in the first string
+    if i not in s3:
+
+        # Add the word to the result list
+        r.append(i)
+
+# Print the list of uncommon words
+print(r)
