@@ -9,9 +9,17 @@
 # [2, 5, 8]
 # [3, 6, 9]
 
-# matrix = [
-# [1,2,3],
-# [4,5,6],
-# [7,8,9]
-# ]
-# L=[j] for i in matrix for j in i
+# Write a list comprehension to transpose a given matrix
+
+# Given matrix
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Transpose matrix using list comprehension
+L = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
+
+# Print transposed matrix
+print(L)
