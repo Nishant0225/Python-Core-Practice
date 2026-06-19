@@ -11,16 +11,33 @@
 
 # [2,4,6,10,1]-->[22,20,16,10,23]
 
-l=[2,4,6,10,1]
-l2=[]
 
-for i in range(len(l)):
-    for j in range(1,len(l)):
-        # print(f"j{i}:",l[j])
-        if l[i]<=l[j]:
-            print("1con",l[i],l[j])
-            l[i]+=l[j]
-            l2.append(l[i])
-    print("con",l[i],l[j])
+# Problem 5: Add all greater elements and itself for each element
+
+# Given list
+l1 = [2, 4, 6, 10, 1]
+
+# Empty list to store resultant values
+l2 = []
+
+# Loop through each element in the list
+for i in l1:
+    
+    # Variable to store sum of greater elements
+    total = 0
+    
+    # Compare current element with every element in the list
+    for j in l1:
+        
+        # Add elements which are greater than current element
+        if i < j:
+            total = total + j
+    
+    # Add current element itself to the total
+    total = total + i
+    
+    # Store result in new list
+    l2.append(total)
+
+# Print final resultant list
 print(l2)
-print(l)
