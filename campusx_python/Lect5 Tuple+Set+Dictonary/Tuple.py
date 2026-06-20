@@ -545,3 +545,38 @@ print(others)
 # 1
 # 2
 # [3, 4, 5, 6]
+
+# ==========================================
+# ZIP FUNCTION IN PYTHON
+# ==========================================
+
+# The zip() function combines elements
+# from two or more iterables (list, tuple, etc.)
+# into pairs.
+
+name = ("Nishant", "Rahul", "Aman")
+age = (22, 21, 23)
+
+result = zip(name, age)
+
+print(list(result))
+
+# Output:
+# [('Nishant', 22), ('Rahul', 21), ('Aman', 23)]
+
+# ==========================================
+# ZIP WITH TUPLES
+# ==========================================
+
+# zip() combines elements of tuples
+# based on their positions.
+
+t1 = (1, 2, 3)
+t2 = ('a', 'b', 'c')
+
+result = zip(t1, t2)
+
+print(tuple(result))
+
+# Output:
+# ((1, 'a'), (2, 'b'), (3, 'c'))
