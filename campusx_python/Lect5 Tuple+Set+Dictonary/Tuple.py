@@ -527,3 +527,21 @@ print("b =", b)
 # After Swapping:
 # a = 20
 # b = 10
+
+# ==========================================
+# EXTENDED TUPLE UNPACKING
+# ==========================================
+
+# The * operator is used to collect
+# multiple values into a list.
+
+a, b, *others = (1, 2, 3, 4, 5, 6)
+
+print(a)
+print(b)
+print(others)
+
+# Output:
+# 1
+# 2
+# [3, 4, 5, 6]
