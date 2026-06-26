@@ -12,9 +12,7 @@
 # Input: str = "Campusx"
 # Output: No
 
-# Write a program to check whether a given string is a binary string or not.
 # A string is said to be binary if it contains only two unique characters.
-
 # Take string input from user
 i = input("Enter a string: ")
 
@@ -23,18 +21,10 @@ a = set()
 
 # Traverse each character of the string
 for b in i:
-
-    # Add character to the set
-    # Duplicate characters will be ignored automatically
     a.add(b)
 
-# Check the number of unique characters
-if len(a) > 2:
-
-    # More than 2 unique characters
-    print("The given string is not binary string")
-
-else:
-
-    # 2 or fewer unique characters
+# Check whether exactly two unique characters are present
+if len(a) == 2:
     print("The given string is binary string")
+else:
+    print("The given string is not binary string")

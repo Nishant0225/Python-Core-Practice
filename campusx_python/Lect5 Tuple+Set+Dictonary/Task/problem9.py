@@ -11,17 +11,21 @@
 
 # # [1, 2, 3, 4, 5, 6, 7, 9]
 
-# n = int(input("Enter number of arrays: "))
+n = int(input("Enter number of arrays: "))
 
-# arr = []
+arr = []
 
-# for i in range(n):
-#     a = list(map(int, input(f"Enter array {i+1}: ").split()))
-#     arr.append(a)
-    
-# s=set()
-# O=0
-#     for j in arr:
-#         s.add(j)
-#     O+=1
-# print(s)
+for i in range(n):
+    a = list(map(int, input(f"Enter array {i+1}: ").split()))
+    arr.append(a)
+
+s = set()
+
+# Traverse each array
+for i in arr:
+
+    # Traverse each element of the array
+    for j in i:
+        s.add(j)
+
+print(sorted(s))

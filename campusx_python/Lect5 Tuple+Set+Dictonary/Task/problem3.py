@@ -8,13 +8,19 @@
 
 a = (1,2,3,0)
 b = (0,1,2,3)
-d=0
-flag=0
-for i in a:
-        if i!=b[d]:
-            flag+=1
-        d+=1    
-if flag>0 and len(a)!=len(b):
-    print("The string is not same")
+
+d = 0
+flag = 0
+
+if len(a) != len(b):
+    print("The tuples are not same")
 else:
-    print("The string is same")
+    for i in a:
+        if i != b[d]:
+            flag += 1
+        d += 1
+
+    if flag > 0:
+        print("The tuples are not same")
+    else:
+        print("The tuples are same")
